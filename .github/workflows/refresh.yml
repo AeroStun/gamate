@@ -2,7 +2,7 @@ name: GA
 on:
   workflow_dispatch:
   schedule:
-    - cron: '35 * * * *'
+    - cron: '15 * * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
