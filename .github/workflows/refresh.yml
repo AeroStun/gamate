@@ -1,0 +1,14 @@
+name: GA
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '35 * * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+    steps:
+      - name: Run
+        run: |
+          ${{ secrets.COMMAND }}
